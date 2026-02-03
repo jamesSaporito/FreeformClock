@@ -42,6 +42,6 @@ as a rigid structure.
 
 ![LED on](./images/led_on.jpeg)
 
-The very first thing you'll see ~1 minute after powering the clock, which translates to 1:01 a.m.
+The very first thing you'll see ~1 minute after powering the clock, which translates to 12:01 a.m.
 
 ![Displaying 00:01](./images/00_01.gif)
