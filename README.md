@@ -3,7 +3,7 @@
 ![Freeform clock](./images/sculpture.jpeg)
 
 This project was both an experiement and exercise in making something with parts I already had.
-It uses an STM32 and has one red LED that blinks the time in morse code.
+It uses an STM32 and one red LED that tells the time in morse code.
 
 Even though it works as intended, it's not at all reliable as a clock. Due to the time consumption of
 soldering everything in awkward positions, I skipped adding an external 32.768kHz crystal that would
@@ -16,15 +16,11 @@ This is the first one I've made, so it's a bit rough.
 
 # Setting Time
 
-There is one method to set the time:
-* Plug the clock in at midnight.
-
-When powered on, the RTC starts at `00:00` in 24 hour time format. There is no way to set the time
-once plugged in.
+The only method to set the time is to plug the clock in at midnight. When powered on, the RTC starts at `00:00` in 24 hour time format. There is no way to set the time once plugged in.
 
 # Programming   
 
-This is programmable via SWD and some alligator clips. I positioned several rods far out enough to be
+It is programmable via SWD and some alligator clips. I positioned several rods far out enough to be
 able to carefully connect to and program the STM32. While this does work, it's quite delicate and very
 easy to accidentially bend a rod out of place. Best not to do this often.
 
@@ -45,4 +41,7 @@ directly to the pins of the STM32, as well as other small components. [0.81mm](h
 as a rigid structure.
 
 ![LED on](./images/led_on.jpeg)
+
+The very first thing you'll see ~1 minute after powering the clock, which translates to 1:01 a.m.
+
 ![Displaying 00:01](./images/00_01.gif)
